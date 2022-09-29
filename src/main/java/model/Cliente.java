@@ -1,4 +1,4 @@
-package dadosDaConta;
+package model;
 
 public class Cliente {
 

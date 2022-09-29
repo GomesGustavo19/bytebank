@@ -1,6 +1,6 @@
-package bancoDeDados;
+package DAO;
 
-import dadosDaConta.*;
+import model.*;
 
 import java.io.*;
 import java.util.ArrayList;

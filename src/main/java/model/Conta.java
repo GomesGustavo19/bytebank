@@ -1,6 +1,5 @@
-package dadosDaConta;
+package model;
 
-import bancoDeDados.*;
 import org.jetbrains.annotations.NotNull;
 
 public class Conta {
