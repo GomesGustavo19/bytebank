@@ -39,28 +39,29 @@ public class CriarContaTeste {
 
     public static void main(String[] args) {
 
-        Gerente g = new Gerente();
-        //Funcionario g = new Funcionario();
+        Funcionario g = new Gerente();
+        Funcionario f = new Funcionario();
+        Funcionario d = new Diretor();
 
         g.setNome("Gustavo");
         g.setCpf("212312312121");
-        g.setSalario(2500.0);
+        g.setSalario(5500.0);
+        f.setSalario(2500.0);
+        d.setSalario(10000.0);
 
-        String login = g.getCpf();
-        g.setSenha(0);
-        int senha = g.getSenha();
+        ControleBonificacao cb = new ControleBonificacao();
+        cb.registra(g);
+        cb.registra(f);
+        cb.registra(d);
 
-        boolean autenticou = g.autentica(login,senha);
+        System.out.println(cb.getSoma());
 
 
-
-        if(autenticou){
-            System.out.println(g.getNome());
-            System.out.println(g.getCpf());
-            System.out.println(g.getSalario());
-            System.out.println(g.getBonificacao());
-            System.out.println(":D");
-        }
+        System.out.println(g.getNome());
+        System.out.println(g.getCpf());
+        System.out.println(g.getSalario());
+        System.out.println(g.getBonificacao());
+        System.out.println(":D");
 
     }
 
