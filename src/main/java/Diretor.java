@@ -1,5 +1,3 @@
-package model;
-
 public class Diretor extends Gerente {
 
     public double getBonificacao() {

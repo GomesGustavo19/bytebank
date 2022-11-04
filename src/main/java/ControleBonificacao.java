@@ -1,5 +1,3 @@
-package model;
-
 public class ControleBonificacao {
 
     private double soma;

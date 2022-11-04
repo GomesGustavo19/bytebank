@@ -1,11 +1,9 @@
-package model;
-
 public class Gerente extends Funcionario {
 
     private int senha;
 
     public double getBonificacao() {
-        return super.getBonificacao() + super.salario;
+        return  super.salario;
     }
 
     public void setSenha(int senha) {
