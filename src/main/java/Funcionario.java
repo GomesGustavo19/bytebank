@@ -1,10 +1,10 @@
-package dadosDaConta;
-
-public class Cliente {
+public abstract class Funcionario {
 
     private String nome;
     private String cpf;
-    private String profissão;
+    protected double salario;
+
+    public abstract double getBonificacao();
 
     public String getNome() {
         return nome;
@@ -22,11 +22,11 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-    public String getProfissão() {
-        return profissão;
+    public double getSalario() {
+        return salario;
     }
 
-    public void setProfissão(String profissão) {
-        this.profissão = profissão;
+    public void setSalario(double salario) {
+        this.salario = salario;
     }
 }
