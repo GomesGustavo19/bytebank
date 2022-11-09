@@ -1,8 +1,13 @@
-public class Cliente {
+public class Cliente implements Autenticavel {
 
     private String nome;
     private String cpf;
-    private String profissão;
+    private String profissao;
+    private Autenticacao aut;
+
+    public Cliente() {
+        this.aut = new Autenticacao();
+    }
 
     public String getNome() {
         return nome;
@@ -20,11 +25,25 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-    public String getProfissão() {
-        return profissão;
+    public String getProfissao() {
+        return profissao;
     }
 
-    public void setProfissão(String profissão) {
-        this.profissão = profissão;
+    public void setProfissao(String profissao) {
+        this.profissao = profissao;
     }
+
+    @Override
+    public void setSenha(String senha) {
+        this.aut.senha = senha;
+    }
+
+    @Override
+    public boolean autenticou(String senha) {
+
+        return this.aut.autentico(senha);
+
+    }
+
 }
+

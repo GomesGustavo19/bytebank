@@ -17,10 +17,16 @@ public class CriarContaTeste {
         segundaConta.setAgencia(2525);
         segundaConta.setNumero(13);
 
-
+        CalculadorImposto ci = new CalculadorImposto();
+        SeguroVida sv = new SeguroVida();
         //Teste Metodo saca
         primeiraConta.saca(299.0);
         System.out.println("Valor apos o saque: " + primeiraConta.getSaldo());
+
+        sv.getValorImposto(100,20);
+        ci.registra(primeiraConta);
+        ci.registra(sv);
+
 
     }
 
