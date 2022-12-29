@@ -2,6 +2,14 @@ package br.com.banco.bytebank.model;
 
 import org.jetbrains.annotations.NotNull;
 
+/**
+ *
+ * esta classe representa conta do banco byteBank
+ *
+ * @author Gustavo Gomes
+ * @version 0.1
+ */
+
 public abstract class Conta {
 
     protected double saldo;
@@ -10,6 +18,11 @@ public abstract class Conta {
     private Cliente titular;
     private static int total = 0;
 
+    /**
+     * Construtor para inicializar o objeto Conta a partir da agencia e numero
+     * @param agencia
+     * @param numero
+     */
     public Conta(int agencia, int numero) {
         Conta.total++;
         this.agencia = agencia;
@@ -21,6 +34,12 @@ public abstract class Conta {
         this.saldo += valor;
     }
 
+    /**
+     * Valor precisa ser menor ou igual ao saldo
+     * @param valor
+     * @return
+     * @throws SaldoInsulficienteExeception
+     */
     public abstract double saca(double valor) throws SaldoInsulficienteExeception;
 
     public void transferir(double valor, @NotNull Conta destino) throws SaldoInsulficienteExeception{

@@ -1,5 +1,13 @@
 package br.com.banco.bytebank.model;
 
+/**
+ *
+ * esta classe representa o cliente do banco byteBank
+ *
+ * @author Gustavo Gomes
+ * @version 0.1
+ */
+
 public class Cliente implements Autenticavel {
 
     private String nome;

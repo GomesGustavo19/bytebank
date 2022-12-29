@@ -41,32 +41,4 @@ public class CriarContaTeste {
 
     }
 
-    //public static void main(String[] args) {
-
-    // br.com.banco.bytebank.model.Funcionario g = new br.com.banco.bytebank.model.Gerente();
-    //  br.com.banco.bytebank.model.Funcionario f = new br.com.banco.bytebank.model.Funcionario();
-    //  br.com.banco.bytebank.model.Funcionario d = new br.com.banco.bytebank.model.Diretor();
-
-    //  g.setNome("Gustavo");
-    //  g.setCpf("212312312121");
-    //  g.setSalario(5500.0);
-    //  f.setSalario(2500.0);
-    //  d.setSalario(10000.0);
-
-    //  br.com.banco.bytebank.model.ControleBonificacao cb = new br.com.banco.bytebank.model.ControleBonificacao();
-    //  cb.registra(g);
-    //  cb.registra(f);
-    //  cb.registra(d);
-
-    //    System.out.println("valor somado: " + cb.getSoma());
-
-
-    //  System.out.println(g.getNome());
-    //  System.out.println(g.getCpf());
-    //  System.out.println(g.getSalario());
-    //  System.out.println(g.getBonificacao());
-    //  System.out.println(":D");
-
-    //}
-
 }
